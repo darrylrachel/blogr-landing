@@ -20,11 +20,14 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="./app/stylesheets/styles.css" />
+		<link rel="stylesheet" href="./dist/main.css" />
 	</head>
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<nav class="navbar navbar-expand-lg navbar-light">
+				<!-- <div class="overlay"></div> -->
+				<h1 class="message">Refactor all styles to Scss</h1>
+				<nav class="navbar navbar-expand-lg">
 					<a class="navbar-brand" href="#">
 						<img src="./app/images/logo.svg" alt="" />
 					</a>
@@ -37,14 +40,18 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon"></span>
+						<!-- <span class="navbar-toggler-icon"></span> -->
+						<a href="#" id="btnHamburger" class="hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
 					</button>
-					Hard code hamburger menu
 					<div
-						class="navbar-cta collapse navbar-collapse"
+						class="navbar-cta show collapse navbar-collapse"
 						id="navbarSupportedContent"
 					>
-						<ul class="navbar-nav mr-auto">
+						<ul class="navbar-nav mr-auto" id="remove-margin">
 							<li class="nav-item dropdown">
 								<a
 									class="nav-link dropdown-toggle"
@@ -119,6 +126,78 @@
 						</form>
 					</div>
 				</nav>
+				<!-- <div class="mobile-menu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Product
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Overview</a>
+								<a class="dropdown-item" href="#">Pricing</a>
+								<a class="dropdown-item" href="#">Marketplace</a>
+								<a class="dropdown-item" href="#">Features</a>
+								<a class="dropdown-item" href="#">Integrations</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Company
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">About</a>
+								<a class="dropdown-item" href="#">Team</a>
+								<a class="dropdown-item" href="#">Blog</a>
+								<a class="dropdown-item" href="#">Careers</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Connect
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Contact</a>
+								<a class="dropdown-item" href="#">Newsletter</a>
+								<a class="dropdown-item" href="#">LinkedIn</a>
+							</div>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<button class="btn header-cta-btn my-2 my-sm-0 login" type="submit">
+							Login
+						</button>
+						<button
+							class="btn header-cta-btn my-2 my-sm-0 signup"
+							type="submit"
+						>
+							Sign Up
+						</button>
+					</form>
+				</div> -->
 			</header>
 
 			<div class="jumbotron">
@@ -311,5 +390,6 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
+		<script src="./app/js/script.js"></script>
 	</body>
 </html>

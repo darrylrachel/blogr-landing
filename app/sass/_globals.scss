@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+@import "/app/sass/_reset.css";
+@import "/app/sass/_helpers.scss";
+@import "/app/sass/_header";
+@import "/app/sass/_hero";
+@import "/app/sass/_content";
+
+// Variables
+
+	/* BODY */
+	$overpass: 'Overpass', sans-serif;
+	$ubuntu: 'Ubuntu', sans-serif;
+
+	/* COLORS */
+	$body-text: hsl(207, 13%, 34%);
+	$white-text: hsl(0, 0%, 100%);
+	$heading-text: hsl(208, 49%, 24%);
+	$cta-text: hsl(356, 100%, 66%);
+	$cta-hover: hsl(355, 100%, 74%);
+	$footer-bg: hsl(240, 10%, 16%);
+	$footer-text: hsl(240, 2%, 79%);
+
+	/* Mobile background gradient - Intro/CTA mobile Nav*/
+	$v-light-red: hsl(13, 100%, 72%);
+	$light-red: hsl(353, 100%, 62%);
+
+	/* Background gradient - body */
+	$v-grey-blue: hsl(237, 17%, 21%);
+	$v-desat-blue: hsl(237, 23%, 32%);
